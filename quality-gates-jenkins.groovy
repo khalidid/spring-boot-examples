@@ -3,8 +3,8 @@
 )
 import static groovyx.net.http.ContentType.TEXT
 // Define URL variable
-String taskURL = "http://<SONAR_URL>/api/ce/task?id=TASK_ID"
-String projectStatusURL = "http://<SONAR_URL>/api/qualitygates/project_status?analysisId="
+String taskURL = "http://localhost:9000/api/ce/task?id=TASK_ID"
+String projectStatusURL = "http://localhost:9000/api/qualitygates/project_status?analysisId="
 
 // Get project status
 def status=taskURL(taskURL).task.status
